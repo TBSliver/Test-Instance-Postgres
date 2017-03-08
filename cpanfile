@@ -1,7 +1,9 @@
-requires 'perl', '5.008005';
-
-# requires 'Some::Module', 'VERSION';
+requires 'Net::EmptyPort';
+requires 'Moo';
 
 on test => sub {
-    requires 'Test::More', '0.96';
+  requires 'Test::More', '0.96';
+  requires 'Test::Exception';
+  requires 'DBI';
+  requires 'DBD::Pg';
 };
